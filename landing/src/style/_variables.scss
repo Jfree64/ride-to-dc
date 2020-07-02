@@ -1,0 +1,61 @@
+/*
+ * VARIABLES
+ *
+ * Global sizes and colors that can be used in every component
+ *
+ */
+
+$bobby: "bobby", "times new roman", serif;
+$source-sans: "Source Sans Pro", "system-ui",sans-serif;
+$korolev: "korolev", sans-serif;
+$montserrat: "montserrat", sans-serif;
+$nexa: "nexa", sans-serif;
+
+
+/* ============================================================ *\
+|* Colors
+\* ============================================================ */
+
+$white:             #FFF;
+$grey-light:        #999999;
+$grey-dark:         #3D3D3D;
+$black:             #000000;
+$pop:               #ff0000;
+$sec:               #0000FF;
+
+/* ============================================================ *\
+|* Breakpoints (bp)
+\* ============================================================ */
+
+$bp-sm:             288px;
+$bp-md:            576px;
+$bp-lg:           864px;
+$bp-xl:            1152px;
+
+/* ============================================================ *\
+ * Font sizes
+\* ============================================================ */
+
+$s1-mobile:           12vw;
+$s2-mobile:           10vw;
+$s3-mobile:           8vw;
+$s4-mobile:           7vw;
+$s5-mobile:           6vw;
+$s6-mobile:           5vw;
+$s7-mobile:           4vw;
+$s8-mobile:           3.6vw;
+
+$s1:                  54px;
+$s2:                  40px;
+$s3:                  36px;
+$s4:                  32px;
+$s5:                  27px;
+$s6:                  22px;
+$s7:                  18px;
+$s8:                  16px;
+
+/* ============================================================ *\
+ * Font Weights
+\* ============================================================ */
+$bold: bold;
+$normal: normal;
