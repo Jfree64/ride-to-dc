@@ -1,0 +1,19 @@
+@import 'style/_variables.scss';
+@import 'style/_mixins.scss';
+
+.hero {
+  background: url(../../../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: $pink;
+  }
+  h2 {
+
+  }
+} 

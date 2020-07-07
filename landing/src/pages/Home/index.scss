@@ -1,0 +1,70 @@
+.home-hero {
+    height: 5000px;
+}
+
+.intro-container {
+    position: absolute;
+    padding-left: 2vw;
+    width:100%;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Opera and Firefox */
+  }
+
+/*TYPOGRAPHY*/
+.intro-text {
+  cursor: pointer;
+  display: block;
+  color: #3D3D3D;
+  font-size: 6vw;
+  line-height: 8vw;
+  font-family: 'GT Sectra', serif;
+  font-weight: bold;
+  font-style: italic;
+  text-align: left;
+  text-decoration: none;
+  &:hover {
+    color: red;
+  }
+  }
+  
+  @media only screen and (max-width: 972px) {
+  }
+  
+  @media only screen and (max-width: 620px) {
+  }
+  
+  .intro-text a {
+  color: transparent;
+  -webkit-text-stroke-width: .113vw;
+  -webkit-text-stroke-color: #3D3D3D;
+  text-decoration: none;
+  }
+  .intro-text a:hover {
+    background: -webkit-linear-gradient(180deg, #FF00FF, #00FFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0px;
+    }
+  
+  h1 {
+    color: #3D3D3D;
+    font-size: 3rem;
+    font-family: 'GT Sectra', serif;
+    font-weight: regular;
+  }
+  
+  
+    h3.label {
+      color: black;
+      font-size: 1rem;
+      font-family: 'Gotham', serif;
+      font-weight: bolder;
+    }

@@ -1,107 +1,22 @@
-@import "./_variables.scss";
-
-// Create a map of all shared variables
-// https://sass-lang.com/documentation/values/maps
-$sizes: (
-  "s1": (
-    "mobile": $s1-mobile,
-    "desktop": $s1
-  ),
-  "s2": (
-    "mobile": $s2-mobile,
-    "desktop": $s2
-  ),
-  "s3": (
-    "mobile": $s3-mobile,
-    "desktop": $s3
-  ),
-  "s4": (
-    "mobile": $s4-mobile,
-    "desktop": $s4
-  ),
-  "s5": (
-    "mobile": $s5-mobile,
-    "desktop": $s5
-  ),
-  "s6": (
-    "mobile": $s6-mobile,
-    "desktop": $s6
-    ),
-  "s7": (
-    "mobile": $s7-mobile,
-    "desktop": $s7
-  ),
-  "s8": (
-    "mobile": $s8-mobile,
-    "desktop": $s8
-  ),
-  "inherit": inherit
-);
-
-@function getSizeAtScale ($size-name, $scale-name) {
-  $size-description: map-get($sizes, $size-name);
-  @if type-of($size-description) == map {
-    @return map-get($size-description, $scale-name);
-  } @else {
-    @return $size-description;
-  }
+@mixin smoothness {
+  -webkit-transition: 0.2s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -moz-transition: 0.2s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -o-transition: 0.2s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  -ms-transition: 0.2s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+  transition: 0.2s cubic-bezier(0.25, -0.25, 0.75, 1.25);
 }
 
-@mixin size($size-name) {
-  font-size: getSizeAtScale($size-name, "mobile");
-  @media screen and (min-width: $bp-md) {
-    font-size: getSizeAtScale($size-name, "desktop");
-  };
-};
-
-$colors: (
-  "white": $white,
-  "grey-light": $grey-light,
-  "grey-dark": $grey-dark,
-  "black": $black,
-  "pop": $pop,
-  "sec": $sec,
-  "inherit": "inherit"
-);
-
-@mixin color($color-name) {
-  color: map-get($colors, $color-name)
-};
-
-$families: (
-  "bobby": $bobby,
-  "source-sans": $source-sans
-);
-
-@mixin family($family-name) {
-  font-family: map-get($families, $family-name);
+@mixin noSelect {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
 }
 
-$weights: (
-  "bold": $bold,
-  "normal": $normal,
-  "inherit": "inherit"
-);
-
-@mixin weight($weight-name) {
-  font-weight: map-get($weights, $weight-name)
-};
-
-@mixin type-style (
-  $size-name,
-  $color-name,
-  $weight-name,
-  $family-name
-) {
-  @include size($size-name);
-  @include color($color-name);
-  @include weight($weight-name);
-  @include family($family-name);
+@mixin fillAvail {
+  width: 100%;
+  width: -moz-available;          /* WebKit-based browsers will ignore this. */
+  width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+  width: stretch;
 }
-
-$breakpoints: (
-  "sm": $bp-sm,
-  "md": $bp-md,
-  "lg": $bp-lg,
-  "xl": $bp-xl
-)

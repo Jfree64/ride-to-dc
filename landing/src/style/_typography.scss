@@ -5,39 +5,11 @@
  *
  */
 
-@import 'variables.scss';
-@import 'mixins.scss';
+@import '_variables.scss';
+@import '_mixins.scss';
 //source-sans
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap');
 
-@font-face {
-  font-family: 'Bobby';
-  font-style: normal;
-  font-weight: bold;
-  src: url('../assets/fonts/F37Bobby-Bold.eot'); /* IE9 Compat Modes */
-	src: url('../assets/fonts/F37Bobby-Bold.woff2') format('woff2'), /* Modern Browsers */
-	url('../assets/fonts/F37Bobby-Bold.woff') format('woff'), /* Modern Browsers */
-	url('../assets/fonts/F37Bobby-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
-}
-
-@font-face {
-  font-family: 'Bobby';
-  font-style: normal;
-  font-weight: light;
-  src: url('../assets/fonts/F37Bobby-Light.eot'); /* IE9 Compat Modes */
-	src: url('../assets/fonts/F37Bobby-Light.woff2') format('woff2'), /* Modern Browsers */
-	url('../assets/fonts/F37Bobby-Light.woff') format('woff'), /* Modern Browsers */
-	url('../assets/fonts/F37Bobby-Light.ttf') format('truetype'), /* Safari, Android, iOS */
-}
-
-//PROJECT FONTS
-//gideon: Nexa Black
-@font-face {
-  font-family: 'Nexa';
-  font-style: normal;
-  font-weight: normal;
-  src: url('../assets/fonts/NexaBlack.otf') format('opentype');
-}
 //c4coin: Korolev Bold
 @import url("https://use.typekit.net/kfb0eck.css");
 //spark: Montserrat Regular
@@ -54,7 +26,6 @@
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: $bobby;
 }
 
 a {
@@ -64,7 +35,6 @@ a {
 
 strong {
   font-weight: bold;
-  font-family: $bobby;
 }
 
 h1,  h2,  h3,  h4,  h5,  h6 {
@@ -82,12 +52,3 @@ p + p {
 li + li {
   margin-top: .5em;
 }
-
-h1 { @include type-style("s1", "inherit", "bold", "bobby") }
-h2 { @include type-style("s2", "inherit", "bold", "bobby") }
-h3 { @include type-style("s3", "inherit", "bold", "bobby") }
-h4 { @include type-style("s4", "inherit", "bold", "bobby") }
-h5 { @include type-style("s5", "inherit", "bold", "bobby") }
-h6 { @include type-style("s6", "inherit", "normal", "bobby") }
-p { @include type-style("s7", "inherit", "normal", "source-sans") }
-body { @include type-style("s7", "black", "normal", "source-sans") }

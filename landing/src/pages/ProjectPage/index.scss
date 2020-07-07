@@ -1,0 +1,12 @@
+.project-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    max-width: 800px;
+    width: 100%;
+  }
+  p {
+    max-width: 800px;
+  }
+}
