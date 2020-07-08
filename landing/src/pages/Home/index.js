@@ -6,6 +6,8 @@ import { inDevelopment } from 'utils/env-utils'
 import { Hero } from 'pages/Home/Hero';
 
 import './index.scss'
+import { Destinations } from './Destinations';
+import { Mission } from './Mission';
 
 
 export const Home = () => {
@@ -18,6 +20,10 @@ export const Home = () => {
   }
 
   return (
-    <Hero />
+    <React.Fragment>
+      <Hero />
+      <Destinations />
+      <Mission />
+    </React.Fragment>
   )
 }

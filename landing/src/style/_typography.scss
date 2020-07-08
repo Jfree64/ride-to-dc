@@ -10,17 +10,19 @@
 //source-sans
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap');
 
-//c4coin: Korolev Bold
-@import url("https://use.typekit.net/kfb0eck.css");
-//spark: Montserrat Regular
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@font-face {
+  font-family: 'Bayard';
+  src: url('../fonts/BAYARD-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/BAYARD-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/BAYARD-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/BAYARD-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+}
 
 * {
 	font-size: inherit;
 	font-weight: inherit;
   color: inherit;
   vertical-align: inherit;
-  line-height: 1.2em;
 }
 
 html {
@@ -51,4 +53,19 @@ p + p {
 
 li + li {
   margin-top: .5em;
+}
+
+h1 {
+  font-size: 10rem;
+  font-family: 'bayard', sans-serif;
+  span{
+    font-size: .57em;
+    margin: -.05em;
+  }
+}
+
+h2 {
+  font-size: 5rem;
+  font-family: 'bayard', sans-serif;
+  line-height: .9em;
 }

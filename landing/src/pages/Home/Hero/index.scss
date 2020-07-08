@@ -3,17 +3,22 @@
 
 .hero {
   background: url(../../../img/hero.jpg);
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  color: $pink;
   h1 {
-    color: $pink;
+    color: $yellow;
+    margin-bottom: -20px;
   }
   h2 {
-
+    color: $gold;
+  }
+  svg {
   }
 } 

@@ -19,8 +19,12 @@
   z-index: 1;
   @include smoothness;
   .footer-logo {
-    height: 40px;
-    width: 106px;
+    font-family: bayard;
+    font-size: 3rem;
+    @include smoothness;
+    &:hover {
+      cursor: pointer;
+    }
   }
   a {
     color: white;
@@ -50,6 +54,10 @@
   padding: 2em;
   display: flex;
   flex-direction: column;
+  p + p {
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
 }
 
 .footer-label {
@@ -67,28 +75,10 @@
   margin-bottom: 100px;
 }
 
-.footer-social-links a:last-child svg {
-  margin: 0;
-}
-
-.footer-bottom {
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  color: $white;
-  width: 100%;
-  p{
+.footer-social-links {
+  a:last-child svg {
     margin: 0;
-    &:nth-child(1) {
-      position: absolute;
-      left: 20px;
-      color: $pink;
-    }
-    &:nth-child(2) {
-      position: absolute;
-      left: calc(50% - 114px)
-    }
-  }
+  } 
 }
 
 @media only screen and (max-width: 840px) {

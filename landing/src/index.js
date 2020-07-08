@@ -9,6 +9,8 @@ import { Footer } from 'components/Footer'
 
 // Pages
 import { Home } from 'pages/Home'
+import { About } from 'pages/About'
+import { TheRoute } from 'pages/TheRoute'
 
 // Contexts
 // import { ContentProvider } from 'contexts/ContentContext';
@@ -25,6 +27,9 @@ function App() {
         <ScrollToTop />
           <Header />
           <Switch>
+            <Route path="/sign-up" component={ Home }/>
+            <Route path="/route" component={ TheRoute }/>
+            <Route path="/about" component={ About }/>
             <Route path="/" component={ Home }/>
           </Switch>
         <Footer />

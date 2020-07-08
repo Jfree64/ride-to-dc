@@ -1,0 +1,22 @@
+@import 'style/_variables.scss';
+@import 'style/_mixins.scss';
+
+.destinations {
+  height: 200px;
+  color: $black;
+  background: $red;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  h1 {
+    font-size: 10vw;
+  }
+  .destination-arrow {
+    color: $maroon;
+    height: 6em;
+    padding: 0 1em;
+    width: 5em;
+  }
+}

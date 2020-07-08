@@ -1,0 +1,11 @@
+@import 'style/_variables.scss';
+@import 'style/_mixins.scss';
+
+.mission {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  ol {
+    padding: 0;
+  }
+}
