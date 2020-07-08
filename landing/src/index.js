@@ -22,7 +22,6 @@ import * as serviceWorker from './serviceWorker';
 
 function App() {
   return(
-    // <ContentProvider>
       <Router>
         <ScrollToTop />
           <Header />
@@ -34,7 +33,6 @@ function App() {
           </Switch>
         <Footer />
       </Router>
-    // </ContentProvider>
   )
 }
 
