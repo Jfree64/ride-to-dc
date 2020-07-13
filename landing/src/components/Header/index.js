@@ -19,12 +19,14 @@ export function Header() {
       <nav className="desktop-links">
         <Link to="/about" onClick={() => setIsActive(false)}>About</Link>
         <Link to="/route" onClick={() => setIsActive(false)}>Route</Link>
+        <Link to="/donate" onClick={() => setIsActive(false)}>Donate</Link>
         <Link className='cta' to="/sign-up" onClick={() => setIsActive(false)}>Join</Link>
       </nav>
     </div>
     <nav className={`mobile-nav ${isActive ? "isActive" : ''}`}>
       <Link to="/about" onClick={() => setIsActive(false)}>About</Link>
       <Link to="/route" onClick={() => setIsActive(false)}>Route</Link>
+      <Link to="/donate" onClick={() => setIsActive(false)}>Donate</Link>
       <Link to="/sign-up" className='cta' onClick={() => setIsActive(false)}>Join</Link>
     </nav>
     </React.Fragment>

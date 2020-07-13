@@ -11,6 +11,8 @@ import { Footer } from 'components/Footer'
 import { Home } from 'pages/Home'
 import { About } from 'pages/About'
 import { TheRoute } from 'pages/TheRoute'
+import { Join } from 'pages/Join'
+import { Donate } from 'pages/Donate'
 
 // Contexts
 // import { ContentProvider } from 'contexts/ContentContext';
@@ -26,9 +28,10 @@ function App() {
         <ScrollToTop />
           <Header />
           <Switch>
-            <Route path="/sign-up" component={ Home }/>
+            <Route path="/sign-up" component={ Join }/>
             <Route path="/route" component={ TheRoute }/>
             <Route path="/about" component={ About }/>
+            <Route path="/donate" component={ Donate }/>
             <Route path="/" component={ Home }/>
           </Switch>
         <Footer />

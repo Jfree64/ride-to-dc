@@ -23,6 +23,7 @@ export const Home = () => {
     <React.Fragment>
       <Hero />
       <Destinations />
+      <h2 className=''>a RIDE to recognize the EXISTENCE <br/> and SIGNIFICANCE of BLACK LIVES.</h2>
       <Mission />
     </React.Fragment>
   )
