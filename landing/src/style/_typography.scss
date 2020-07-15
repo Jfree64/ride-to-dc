@@ -69,3 +69,12 @@ h2 {
   font-family: 'bayard', sans-serif;
   line-height: .9em;
 }
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 30vw;
+  }
+  h2 {
+    font-size: 15vw;
+  }
+}

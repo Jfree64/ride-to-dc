@@ -3,6 +3,7 @@
 
 .header {
   position: fixed;
+  color: $yellow;
   top: 0;
   z-index: 14;
   width: 100%;
@@ -22,22 +23,11 @@
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
   }
-  button {
-    border-radius: 0;
-    margin-top: 0;
-  }
-  a {
-    color: $pink;
-    font-weight: 700;
-    &:hover {
-      color: $red;
-      cursor: pointer;
-    }
-  }
   .cta {
+    border-radius: 4px;
     height: 50px;
     width: 80px;
-    background: $pink;
+    background: $yellow;
     padding: 12px 40px;
     margin-left: 20px;
     color: $black;
@@ -45,7 +35,19 @@
       background: $red;
       color: $yellow;
     }
-  };
+  }
+  button {
+    border-radius: 0;
+    margin-top: 0;
+  }
+  a {
+    color: inherit;
+    font-weight: 700;
+    &:hover {
+      color: $red;
+      cursor: pointer;
+    }
+  }
 }
 
 .header-logo {
@@ -140,13 +142,18 @@
       color: $red;
     }
   }
-  a.btb-btn {
-    display: block;
-    padding: 0;
-    width: 100%;
-    button {
-      margin: 0 20px 20px;
-      width: calc(100% - 40px);
+  .cta {
+    border-radius: 4px;
+    height: 50px;
+    width: calc(100% - 40px);
+    margin: 0 20px 10px;
+    text-align: center;
+    background: $yellow;
+    padding: 16px 40px 12px;
+    color: $black;
+    &:hover {
+      background: $red;
+      color: $yellow;
     }
   }
 }

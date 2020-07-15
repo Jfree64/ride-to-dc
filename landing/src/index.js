@@ -12,6 +12,7 @@ import { Home } from 'pages/Home'
 import { About } from 'pages/About'
 import { TheRoute } from 'pages/TheRoute'
 import { Join } from 'pages/Join'
+import { Schedule } from 'pages/Schedule'
 import { Donate } from 'pages/Donate'
 
 // Contexts
@@ -31,6 +32,7 @@ function App() {
             <Route path="/sign-up" component={ Join }/>
             <Route path="/route" component={ TheRoute }/>
             <Route path="/about" component={ About }/>
+            <Route path="/schedule" component={ Schedule }/>
             <Route path="/donate" component={ Donate }/>
             <Route path="/" component={ Home }/>
           </Switch>

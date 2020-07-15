@@ -1,9 +1,4 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-
-import { Form , Text } from 'informed'
-import * as Yup from 'yup'; 
-
+import React from 'react';
 // Style
 import './index.scss'
 
@@ -106,7 +101,7 @@ export function SignupForm() {
 
   return (
       <div className="signup">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf3ZjBlV1YmI18Hodq903y3DP7zKJCC30AnARI75Xet6XELQg/viewform?embedded=true" width="100%" height="1082" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe title="signup-form" src="https://docs.google.com/forms/d/e/1FAIpQLSf3ZjBlV1YmI18Hodq903y3DP7zKJCC30AnARI75Xet6XELQg/viewform?embedded=true" width="100%" height="1082" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
   );
 }

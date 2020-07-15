@@ -1,8 +1,7 @@
 @import 'style/_variables.scss';
 @import 'style/_mixins.scss';
 
-.destinations {
-  height: 200px;
+.callout {
   color: $yellow;
   background: $black;
   display: flex;
@@ -11,12 +10,22 @@
   justify-content: center;
   padding: 20px;
   h1 {
-    font-size: 10vw;
+    font-size: 9vw;
+    text-align: center;
+    line-height: .9;
+    border: 2px solid $yellow;
+    padding: 40px;
   }
   .destination-arrow {
     color: $gold;
     height: 6em;
     padding: 0 1em;
     width: 5em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .callout h1 {
+    font-size: 14vw;
   }
 }

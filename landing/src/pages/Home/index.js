@@ -7,7 +7,8 @@ import { Hero } from 'pages/Home/Hero';
 
 import './index.scss'
 import { Destinations } from './Destinations';
-import { Mission } from './Mission';
+import { Callout } from './Callout';
+// import { Mission } from './Mission';
 
 
 export const Home = () => {
@@ -22,9 +23,9 @@ export const Home = () => {
   return (
     <React.Fragment>
       <Hero />
+      <Callout/>
       <Destinations />
-      <h2 className=''>a RIDE to recognize the EXISTENCE <br/> and SIGNIFICANCE of BLACK LIVES.</h2>
-      <Mission />
+      {/* <Mission /> */}
     </React.Fragment>
   )
 }
