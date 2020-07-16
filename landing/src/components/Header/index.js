@@ -20,7 +20,7 @@ export function Header() {
         {/* <Link to="/about" onClick={() => setIsActive(false)}>About</Link>
         <Link to="/route" onClick={() => setIsActive(false)}>Route</Link> */}
         <Link to="/schedule" onClick={() => setIsActive(false)}>Schedule</Link>
-        {/* <Link to="/donate" onClick={() => setIsActive(false)}>Donate</Link> */}
+        <Link to="/donate" onClick={() => setIsActive(false)}>Donate</Link>
         <Link className='cta' to="/sign-up" onClick={() => setIsActive(false)}>Sign Up</Link>
       </nav>
     </div>
@@ -28,7 +28,7 @@ export function Header() {
       {/* <Link to="/about" onClick={() => setIsActive(false)}>About</Link>
       <Link to="/route" onClick={() => setIsActive(false)}>Route</Link> */}
       <Link to="/schedule" onClick={() => setIsActive(false)}>Schedule</Link>
-      {/* <Link to="/donate" onClick={() => setIsActive(false)}>Donate</Link> */}
+      <Link to="/donate" onClick={() => setIsActive(false)}>Donate</Link>
       <Link to="/sign-up" className='cta' onClick={() => setIsActive(false)}>Sign Up</Link>
     </nav>
     </React.Fragment>
