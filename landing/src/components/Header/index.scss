@@ -61,6 +61,11 @@
 }
 
 .desktop-links {
+  font-family: 'Crimson Pro';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 1.25em;
   display: inline-block;
   margin-right: 40px;
   a {
@@ -122,6 +127,11 @@
 
 .mobile-nav {
   background: rgba(0, 0, 0,.45);
+  font-family: 'Crimson Pro';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 300;
+  font-size: 1.25em;
   color: $pink;
   height: auto;
   width: 100%;
