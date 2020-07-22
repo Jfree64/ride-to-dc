@@ -89,3 +89,10 @@
     max-width: 500px;
     margin: 0 20px;
   }
+
+  // Mobile safari button fix
+  input[type=submit] {
+    -webkit-appearance: none;
+    -webkit-border-radius:0px;
+    border-radius: 0;
+  }
