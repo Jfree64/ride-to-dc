@@ -35,7 +35,7 @@ function App() {
               <Route path="/sign-up" component={ Join }/>
               <Route path="/route" component={ TheRoute }/>
               <Route path="/about" component={ About }/>
-              <Route path="/FAQ" component={ FAQ }/>
+              <Route path="/faq" component={ FAQ }/>
               <Route path="/schedule" component={ Schedule }/>
               <Route path="/donate" component={ Donate }/>
               <Route exact path="/:slug" component={Blank}/>

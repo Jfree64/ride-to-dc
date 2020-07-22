@@ -17,7 +17,35 @@ export default {
       name: 'faq',
       title: 'Frequently Asked Questions',
       type: 'array',
-      of: [{type: 'question'}]
+      of: [{
+        name: 'category',
+        title: 'Category',
+        type: 'object',
+        fields: [
+          {
+            name: 'name',
+            title: 'Name',
+            type: 'string'
+          },
+          {
+            name: 'icon',
+            title: 'Icon',
+            type: 'image'
+          },
+          {
+            name: 'questions',
+            title: 'Questions',
+            type: 'array',
+            of: [{type: 'question'}]
+          }
+        ],
+        preview: {
+          select: {
+            title: 'name',
+            media: 'icon'
+          }
+        }
+      }]
     }
   ],
   preview: {

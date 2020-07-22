@@ -10,7 +10,8 @@ const getBlockContent = fieldName => `${fieldName}[]{
 
 
 export const contentQuery = `*[_type=="content"][0] | {
-  title
+  title,
+  faq
 }`
 
 export const pagesQuery = `*[_type=="page"] | {

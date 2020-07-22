@@ -45,7 +45,8 @@ h1,  h2,  h3,  h4,  h5,  h6 {
 
 p {
   font-family: 'Crimson Text', serif;
-	margin: 0px;
+  margin: 0px;
+  font-size: 20px;
 }
 
 p + p {
@@ -69,6 +70,13 @@ h2 {
   font-size: 5rem;
   font-family: 'bayard', sans-serif;
   line-height: .9em;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: 'Crimson Pro', serif;
+  line-height: .9em;
+  margin-bottom: 4px;
 }
 
 @media only screen and (max-width: 480px) {

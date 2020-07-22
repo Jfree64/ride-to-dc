@@ -13,5 +13,11 @@ export default {
       title: 'Answer',
       type: 'blockContent'
     },
-  ]
+  ],
+  preview: {
+    select: {
+      title: 'question',
+      subtitle: 'answer'
+    }
+  }
 }

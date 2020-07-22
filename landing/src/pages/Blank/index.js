@@ -10,7 +10,7 @@ import { ContentContext } from 'contexts/ContentContext'
 import './index.scss'
 
 export function Blank() {
-  const { pages, contentLoaded } = useContext(ContentContext)
+  const { pages, loaded } = useContext(ContentContext)
   let { slug: urlSlug } = useParams()
   let history = useHistory();
 
@@ -26,22 +26,22 @@ export function Blank() {
   //check to see if the slug exists in our project, otherwise send us home
   useEffect(() => {
     console.log(page)
-    if (contentLoaded){
+    if (loaded){
       if (slugMatch) {
         (document.title = page.title)
       } else {
         history.push("/")
       }
     }
-  }, [contentLoaded, history, slugMatch, page])
+  }, [loaded, history, slugMatch, page])
   
   return (
-    contentLoaded && 
+    loaded && 
     <div className="blank section-offset">
       {page.bannerImage && <img className="treatment-bannerImage" src={page.bannerImage} alt="banner"/>}
       <div className="page-content">
         <h2 className="page-title">{page.title}</h2>
-        <BodyContent blocks={page.content}/>      
+        {page.content && <BodyContent blocks={page.content}/>}      
       </div>
     </div>
   );

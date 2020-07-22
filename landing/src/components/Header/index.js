@@ -17,16 +17,16 @@ export function Header() {
         <path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
       </svg>
       <nav className="desktop-links">
-        {/* <Link to="/about" onClick={() => setIsActive(false)}>About</Link>
-        <Link to="/route" onClick={() => setIsActive(false)}>Route</Link> */}
+        {/* <Link to="/about" onClick={() => setIsActive(false)}>About</Link> */}
+        <Link to="/faq" onClick={() => setIsActive(false)}>FAQ</Link>
         <Link to="/schedule" onClick={() => setIsActive(false)}>Schedule</Link>
         <Link to="/donate" onClick={() => setIsActive(false)}>Donate</Link>
         <Link className='cta' to="/sign-up" onClick={() => setIsActive(false)}>Sign Up</Link>
       </nav>
     </div>
     <nav className={`mobile-nav ${isActive ? "isActive" : ''}`}>
-      {/* <Link to="/about" onClick={() => setIsActive(false)}>About</Link>
-      <Link to="/route" onClick={() => setIsActive(false)}>Route</Link> */}
+      {/* <Link to="/about" onClick={() => setIsActive(false)}>About</Link> */}
+      <Link to="/faq" onClick={() => setIsActive(false)}>FAQ</Link>
       <Link to="/schedule" onClick={() => setIsActive(false)}>Schedule</Link>
       <Link to="/donate" onClick={() => setIsActive(false)}>Donate</Link>
       <Link to="/sign-up" className='cta' onClick={() => setIsActive(false)}>Sign Up</Link>
