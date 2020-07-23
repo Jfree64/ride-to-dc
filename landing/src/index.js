@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+// Utils
 import { ScrollToTop } from './utils/ScrollToTop'
 
 // Components
@@ -20,10 +22,15 @@ import { Donate } from 'pages/Donate'
 // Contexts
 import { ContentProvider } from 'contexts/ContentContext';
 
+// Style
 import 'style/index.scss'
 
 import * as serviceWorker from './serviceWorker';
 
+// Google Analytics
+import ReactGA from 'react-ga';
+ReactGA.initialize('UA-173451976-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
   return(
