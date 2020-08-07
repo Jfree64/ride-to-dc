@@ -2,7 +2,6 @@
 @import 'style/_mixins.scss';
 
 .destinations {
-  height: 200px;
   color: $yellow;
   background: $black;
   display: flex;
@@ -18,5 +17,25 @@
     height: 6em;
     padding: 0 1em;
     width: 5em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .destinations {
+    flex-direction: column;
+    h1 {
+      font-size: 8em;
+    };
+    svg {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .destinations {
+    h1 {
+      font-size: 6em;
+    };
   }
 }
