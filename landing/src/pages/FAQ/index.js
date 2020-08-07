@@ -13,15 +13,10 @@ export const FAQ = () => {
         <h1 className=''>FAQ</h1>
         <div className='page-content'>
           {loaded &&
-            content.faq.map((category, i)  => 
+            content.faq.map(({name, content}, i)  => 
               <section key={i}>
-                <h2>{category.name}</h2>
-                {category.questions.map(({question, answer}, i) =>
-                <div className='question' key={i}>
-                  <h3>{question}</h3>
-                  <BodyContent blocks={answer} />
-                </div>
-                )}
+                <h2>{name}</h2>
+                  <BodyContent blocks={content} />
               </section>
             )
           }

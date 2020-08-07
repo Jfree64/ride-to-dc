@@ -33,10 +33,9 @@ export default {
             type: 'image'
           },
           {
-            name: 'questions',
-            title: 'Questions',
-            type: 'array',
-            of: [{type: 'question'}]
+            name: 'content',
+            title: 'Content',
+            type: 'blockContent',
           }
         ],
         preview: {
@@ -50,9 +49,7 @@ export default {
   ],
   preview: {
     select: {
-      subtitle: 'characterName',
-      title: 'person.name',
-      media: 'person.image'
+      title: 'title',
     }
   }
 }

@@ -21,7 +21,7 @@ export function Header() {
         <Link to="/faq" onClick={() => setIsActive(false)}>FAQ</Link>
         <Link to="/schedule" onClick={() => setIsActive(false)}>Schedule</Link>
         <a href="https://www.gofundme.com/f/ride-to-dc/donate" onClick={() => setIsActive(false)}>Donate</a>
-        <Link className='cta' to="/sign-up" onClick={() => setIsActive(false)}>Sign Up</Link>
+        <Link className='cta' to="/sign-up" onClick={() => setIsActive(false)}>Volunteer</Link>
       </nav>
     </div>
     <nav className={`mobile-nav ${isActive ? "isActive" : ''}`}>
@@ -29,7 +29,7 @@ export function Header() {
       <Link to="/faq" onClick={() => setIsActive(false)}>FAQ</Link>
       <Link to="/schedule" onClick={() => setIsActive(false)}>Schedule</Link>
       <a href="https://www.gofundme.com/f/ride-to-dc/donate" onClick={() => setIsActive(false)}>Donate</a>
-      <Link to="/sign-up" className='cta' onClick={() => setIsActive(false)}>Sign Up</Link>
+      <Link to="/sign-up" className='cta' onClick={() => setIsActive(false)}>Volunteer</Link>
     </nav>
     </React.Fragment>
   );
