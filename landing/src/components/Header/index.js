@@ -20,7 +20,7 @@ export function Header() {
         {/* <Link to="/about" onClick={() => setIsActive(false)}>About</Link> */}
         <Link to="/faq" onClick={() => setIsActive(false)}>FAQ</Link>
         <Link to="/schedule" onClick={() => setIsActive(false)}>Schedule</Link>
-        <Link to="/donate" onClick={() => setIsActive(false)}>Donate</Link>
+        <a href="https://www.gofundme.com/f/ride-to-dc/donate" onClick={() => setIsActive(false)}>Donate</a>
         <Link className='cta' to="/sign-up" onClick={() => setIsActive(false)}>Sign Up</Link>
       </nav>
     </div>
@@ -28,7 +28,7 @@ export function Header() {
       {/* <Link to="/about" onClick={() => setIsActive(false)}>About</Link> */}
       <Link to="/faq" onClick={() => setIsActive(false)}>FAQ</Link>
       <Link to="/schedule" onClick={() => setIsActive(false)}>Schedule</Link>
-      <Link to="/donate" onClick={() => setIsActive(false)}>Donate</Link>
+      <a href="https://www.gofundme.com/f/ride-to-dc/donate" onClick={() => setIsActive(false)}>Donate</a>
       <Link to="/sign-up" className='cta' onClick={() => setIsActive(false)}>Sign Up</Link>
     </nav>
     </React.Fragment>
