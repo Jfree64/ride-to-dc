@@ -44,7 +44,7 @@ function App() {
               <Route path="/about" component={ About }/>
               <Route path="/faq" component={ FAQ }/>
               <Route path="/schedule" component={ Schedule }/>
-              <Route path="/donate" component={ Donate }/>
+              {/* <Route path="/donate" component={ Donate }/> */}
               <Route exact path="/:slug" component={Blank}/>
               <Route path="/" component={ Home }/>
             </Switch>
