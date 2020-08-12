@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 // Utils
 import { ScrollToTop } from './utils/ScrollToTop'
+import { rainbow } from './utils/fun'
 
 // Components
 import { Header } from 'components/Header'
@@ -33,6 +34,7 @@ ReactGA.initialize('UA-173451976-1');
 ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
+  rainbow('Abolish ICE')
   return(
     <ContentProvider>
         <Router>
@@ -44,6 +46,7 @@ function App() {
               <Route path="/about" component={ About }/>
               <Route path="/faq" component={ FAQ }/>
               <Route path="/schedule" component={ Schedule }/>
+              {/* <Route path="/sponsors" component={ Sponsors }/> */}
               {/* <Route path="/donate" component={ Donate }/> */}
               <Route exact path="/:slug" component={Blank}/>
               <Route path="/" component={ Home }/>

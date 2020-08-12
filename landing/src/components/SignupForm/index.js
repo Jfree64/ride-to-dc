@@ -101,6 +101,6 @@ export function SignupForm() {
 
   return (
       <div className="signup">
-      <iframe src="https://givebutter.com/embed/c/rtdcdeposit" width="100%" height="615px" name="givebutter" frameborder="0" scrolling="no" seamless allowpaymentrequest></iframe><script src="https://givebutter.com/js/widget.js"></script>      </div>
+      <iframe src="https://givebutter.com/embed/c/rtdcdeposit" width="100%" height="615px" name="givebutter" frameborder="0" scrolling="yes" seamless allowpaymentrequest></iframe><script src="https://givebutter.com/js/widget.js"></script>      </div>
   );
 }
