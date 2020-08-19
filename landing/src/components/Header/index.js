@@ -21,9 +21,7 @@ export function Header() {
         <Link to="/route" onClick={() => setIsActive(false)}>Route</Link>
         <Link to="/sponsors" onClick={() => setIsActive(false)}>Sponsors</Link>
         <Link to="/faq" onClick={() => setIsActive(false)}>FAQ</Link>
-        <Link to="/volunteer" onClick={() => setIsActive(false)}>Volunteer</Link>
-        <a href="https://www.gofundme.com/f/ride-to-dc" onClick={() => setIsActive(false)}>Donate</a>
-        <Link className='cta' to="/sign-up" onClick={() => setIsActive(false)}>Join Us</Link>
+        <a className='cta' href="https://www.gofundme.com/f/ride-to-dc" onClick={() => setIsActive(false)}>Donate</a>
       </nav>
     </div>
     <nav className={`mobile-nav ${isActive ? "isActive" : ''}`}>
@@ -31,9 +29,7 @@ export function Header() {
       <Link to="/route" onClick={() => setIsActive(false)}>Route</Link>
       <Link to="/sponsors" onClick={() => setIsActive(false)}>Sponsors</Link>
       <Link to="/faq" onClick={() => setIsActive(false)}>FAQ</Link>
-      <Link to="/volunteer" onClick={() => setIsActive(false)}>Volunteer</Link>
-      <a href="https://www.gofundme.com/f/ride-to-dc" onClick={() => setIsActive(false)}>Donate</a>
-      <Link to="/sign-up" className='cta' onClick={() => setIsActive(false)}>Join Us</Link>
+      <a className='cta' href="https://www.gofundme.com/f/ride-to-dc" onClick={() => setIsActive(false)}>Donate</a>
     </nav>
     </React.Fragment>
   );
