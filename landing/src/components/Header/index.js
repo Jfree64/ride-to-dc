@@ -18,16 +18,20 @@ export function Header() {
       </svg>
       <nav className="desktop-links">
         {/* <Link to="/about" onClick={() => setIsActive(false)}>About</Link> */}
+        <Link to="/route" onClick={() => setIsActive(false)}>Route</Link>
+        <Link to="/sponsors" onClick={() => setIsActive(false)}>Sponsors</Link>
         <Link to="/faq" onClick={() => setIsActive(false)}>FAQ</Link>
-        <Link to="/schedule" onClick={() => setIsActive(false)}>Schedule</Link>
+        <Link to="/volunteer" onClick={() => setIsActive(false)}>Volunteer</Link>
         <a href="https://www.gofundme.com/f/ride-to-dc" onClick={() => setIsActive(false)}>Donate</a>
         <Link className='cta' to="/sign-up" onClick={() => setIsActive(false)}>Join Us</Link>
       </nav>
     </div>
     <nav className={`mobile-nav ${isActive ? "isActive" : ''}`}>
       {/* <Link to="/about" onClick={() => setIsActive(false)}>About</Link> */}
+      <Link to="/route" onClick={() => setIsActive(false)}>Route</Link>
+      <Link to="/sponsors" onClick={() => setIsActive(false)}>Sponsors</Link>
       <Link to="/faq" onClick={() => setIsActive(false)}>FAQ</Link>
-      <Link to="/schedule" onClick={() => setIsActive(false)}>Schedule</Link>
+      <Link to="/volunteer" onClick={() => setIsActive(false)}>Volunteer</Link>
       <a href="https://www.gofundme.com/f/ride-to-dc" onClick={() => setIsActive(false)}>Donate</a>
       <Link to="/sign-up" className='cta' onClick={() => setIsActive(false)}>Join Us</Link>
     </nav>

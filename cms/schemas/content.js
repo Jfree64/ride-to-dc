@@ -9,11 +9,6 @@ export default {
       type: 'string'
     },
     {
-      name: 'externalId',
-      title: 'External ID',
-      type: 'number'
-    },
-    {
       name: 'faq',
       title: 'Frequently Asked Questions',
       type: 'array',
@@ -41,6 +36,47 @@ export default {
         preview: {
           select: {
             title: 'name',
+            media: 'icon'
+          }
+        }
+      }]
+    },
+    {
+      name: 'schedule',
+      title: 'Schedule',
+      type: 'array',
+      of: [{
+        name: 'day',
+        title: 'Day',
+        type: 'object',
+        fields: [
+          {
+            name: 'title',
+            title: 'Title',
+            type: 'string'
+          },
+          {
+            name: 'mileage',
+            title: 'Mileage',
+            type: 'number',
+            description: 'Round to nearest 5 miles'
+          },
+          {
+            name: 'elevation',
+            title: 'Elevation',
+            type: 'number',
+            description: 'Round to nearest 1000ft'
+          },
+          {
+            name: 'content',
+            title: 'Content',
+            type: 'blockContent',
+          }
+        ],
+        preview: {
+          select: {
+            title: 'title',
+            description: 'content',
             media: 'icon'
           }
         }

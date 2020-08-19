@@ -1,0 +1,32 @@
+@import 'style/_variables.scss';
+@import 'style/_mixins.scss';
+
+.route {
+  background-color: $black;
+  text-align: left;
+  color: $yellow;
+  h1 {
+    color: $gold;
+  }
+  .day {
+    width: 500px;
+  }
+  h2 {
+    margin-block-start: 0;
+    margin-block-end: .1em;
+  }
+  h3 {
+    span {
+      color: $gold;
+    }
+  }
+  a {
+    color: $pink;
+    font-family: 'Crimson Pro';
+    font-size: 1.25em;
+    @include smoothness;
+    &:hover {
+      color: $red;
+    }
+  }
+}

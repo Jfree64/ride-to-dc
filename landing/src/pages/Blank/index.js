@@ -36,7 +36,7 @@ export function Blank() {
   }, [loaded, history, slugMatch, page])
   
   return (
-    loaded && 
+    slugMatch && loaded && 
     <div className="blank section-offset">
       {page.bannerImage && <img className="treatment-bannerImage" src={page.bannerImage} alt="banner"/>}
       <div className="page-content">
